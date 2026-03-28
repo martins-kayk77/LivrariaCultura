@@ -1,0 +1,116 @@
+.home-page {
+    min-height: 100vh;
+    background-color: #f5f3ee;
+    color: #1f2933;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-topbar-wrap {
+    padding: 18px 20px 0;
+}
+
+.home-topbar {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #224b72;
+    border-radius: 18px;
+    box-shadow: 0 14px 28px rgba(34, 75, 114, 0.18);
+}
+
+.home-topbar-button,
+.home-profile-link {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.home-topbar-button svg,
+.home-profile-link svg {
+    font-size: 32px;
+}
+
+.home-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 20px 48px;
+}
+
+.home-hero {
+    width: 100%;
+    max-width: 980px;
+    padding: 64px 40px;
+    border-radius: 22px;
+    background-color: #ffffff;
+    border: 1px solid #ddd9d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+}
+
+#menu{
+    color: #ffffff;
+}
+
+.home-logo {
+    width: 220px;
+    max-width: 60%;
+    margin-bottom: 18px;
+}
+
+.home-kicker {
+    margin: 0 0 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #7b5f3b;
+}
+
+.home-hero h1 {
+    margin: 0 0 14px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #1d2a36;
+}
+
+.home-copy {
+    max-width: 440px;
+    margin: 0;
+    color: #556270;
+    line-height: 1.6;
+}
+
+.home-footer {
+    padding: 16px 20px 22px;
+    text-align: center;
+    color: #4b5865;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    .home-main {
+        padding: 24px 14px 36px;
+    }
+
+    .home-hero {
+        padding: 40px 20px;
+    }
+
+    .home-logo {
+        max-width: 72%;
+    }
+}
