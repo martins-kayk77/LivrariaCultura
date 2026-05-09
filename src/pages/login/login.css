@@ -158,6 +158,43 @@
     background-color: #193957;
 }
 
+.login-forgot-button {
+    width: fit-content;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #224b72;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-forgot-button:hover {
+    text-decoration: underline;
+}
+
+.login-reset-box {
+    padding: 14px 16px;
+    border-radius: 12px;
+    background-color: #f5f8fb;
+    border: 1px solid #d8e1ea;
+}
+
+.login-reset-box p {
+    margin: 0 0 12px;
+    color: #556270;
+    line-height: 1.5;
+}
+
+.login-reset-action {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    background-color: #eef3f8;
+    color: #224b72;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 .login-register-link {
     margin: 22px 0 0;
     color: #5f6b76;

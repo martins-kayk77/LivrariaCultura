@@ -2,11 +2,10 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import KeyboardBackspaceRoundedIcon from "@mui/icons-material/KeyboardBackspaceRounded";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import BadgeOutlinedIcon from "@mui/icons-material/BadgeOutlined";
 import ShieldOutlinedIcon from "@mui/icons-material/ShieldOutlined";
 import api from "../../services/api.js";
 import { getUser } from "../../helpers/auth.js";
+import AppShell from "../../components/AppShell";
 import "./perfil.css";
 
 function Index() {
@@ -63,16 +62,12 @@ function Index() {
         : "Nao informado";
 
   return (
-    <div className="profile-page">
-      <header className="profile-header">
-        <Link to="/home" className="profile-back">
-          <KeyboardBackspaceRoundedIcon />
-          <span>Voltar</span>
-        </Link>
-      </header>
+    <AppShell>
+      <div className="profile-page">
+        
 
-      <main className="profile-main">
-        <section className="profile-card">
+        <main className="profile-main">
+          <section className="profile-card">
           <div className="profile-hero">
             <div className="profile-avatar">
               <AccountCircleOutlinedIcon />
@@ -89,27 +84,15 @@ function Index() {
 
           <div className="profile-content">
             <aside className="profile-summary">
-              <div className="summary-item">
-                <BadgeOutlinedIcon />
-                <div>
-                  <span>Nome</span>
-                  <strong>{isLoading ? "Carregando..." : userData.name || "Nao informado"}</strong>
-                </div>
-              </div>
-
-              <div className="summary-item">
-                <EmailOutlinedIcon />
-                <div>
-                  <span>Email</span>
-                  <strong>{isLoading ? "Carregando..." : userData.email || "Nao informado"}</strong>
-                </div>
-              </div>
-
-              <div className="summary-item">
+              <div className="summary-item summary-item-permissions">
                 <ShieldOutlinedIcon />
                 <div>
-                  <span>Perfil de acesso</span>
-                  <strong>{isLoading ? "Carregando..." : userTypeLabel}</strong>
+                  <span>Permissoes</span>
+                  <strong>
+                    {userTypeLabel === "Administrador"
+                      ? "Pode cadastrar, editar e organizar livros, autores e editoras do sistema."
+                      : "Pode consultar livros, autores, editoras e acompanhar as informacoes da propria conta."}
+                  </strong>
                 </div>
               </div>
             </aside>
@@ -117,30 +100,45 @@ function Index() {
             <section className="profile-panel">
               <div className="profile-panel-header">
                 <h2>Informacoes da conta</h2>
-                <p>Esses campos mostram os dados atuais do usuario logado.</p>
+                <p>
+                  Esses campos mostram os dados atuais do usuario logado.
+                </p>
               </div>
 
               <div className="profile-grid">
                 <label className="profile-field">
                   <span>Nome</span>
-                  <input type="text" value={userData.name} readOnly />
+                  <input
+                    type="text"
+                    value={isLoading ? "Carregando..." : userData.name}
+                    readOnly
+                  />
                 </label>
 
-                <label className="profile-field">
-                  <span>Email</span>
-                  <input type="email" value={userData.email} readOnly />
+                <label className="profile-field profile-field-user-type">
+                  <span>Tipo de usuario</span>
+                  <input
+                    type="text"
+                    value={isLoading ? "Carregando..." : userTypeLabel}
+                    readOnly
+                  />
                 </label>
 
                 <label className="profile-field profile-field-full">
-                  <span>Tipo de usuario</span>
-                  <input type="text" value={userTypeLabel} readOnly />
+                  <span>Email</span>
+                  <input
+                    type="text"
+                    value={isLoading ? "Carregando..." : userData.email}
+                    readOnly
+                  />
                 </label>
               </div>
             </section>
           </div>
-        </section>
-      </main>
-    </div>
+          </section>
+        </main>
+      </div>
+    </AppShell>
   );
 }
 

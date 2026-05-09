@@ -1,23 +1,23 @@
-.cadastrar-livro-page {
+.cadastrar-editora-page {
     width: 100%;
 }
 
-.cadastrar-livro-shell {
+.cadastrar-editora-shell {
     max-width: 980px;
     margin: 0 auto;
     padding: 28px 20px 40px;
 }
 
-.cadastrar-livro-hero,
-.cadastrar-livro-card,
-.cadastrar-livro-restricted {
+.cadastrar-editora-hero,
+.cadastrar-editora-card,
+.cadastrar-editora-restricted {
     border-radius: 22px;
     background-color: #ffffff;
     border: 1px solid #ddd9d1;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
 }
 
-.cadastrar-livro-hero {
+.cadastrar-editora-hero {
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@
     align-items: center;
 }
 
-.cadastrar-livro-kicker {
+.cadastrar-editora-kicker {
     margin: 0 0 10px;
     font-size: 0.78rem;
     font-weight: 700;
@@ -34,21 +34,21 @@
     color: #7b5f3b;
 }
 
-.cadastrar-livro-hero h1,
-.cadastrar-livro-restricted h1 {
+.cadastrar-editora-hero h1,
+.cadastrar-editora-restricted h1 {
     margin: 0 0 12px;
     font-size: clamp(2rem, 4vw, 3rem);
     color: #1d2a36;
 }
 
-.cadastrar-livro-copy,
-.cadastrar-livro-restricted p {
+.cadastrar-editora-copy,
+.cadastrar-editora-restricted p {
     margin: 0;
     color: #556270;
     line-height: 1.7;
 }
 
-.cadastrar-livro-badge {
+.cadastrar-editora-badge {
     width: 82px;
     height: 82px;
     display: inline-flex;
@@ -59,71 +59,70 @@
     color: #224b72;
 }
 
-.cadastrar-livro-badge svg {
+.cadastrar-editora-badge svg {
     font-size: 40px;
 }
 
-.cadastrar-livro-card,
-.cadastrar-livro-restricted {
+.cadastrar-editora-card,
+.cadastrar-editora-restricted {
     margin-top: 24px;
     padding: 28px;
 }
 
-.cadastrar-livro-card-header h2 {
+.cadastrar-editora-card-header h2 {
     margin: 0 0 8px;
     color: #1d2a36;
 }
 
-.cadastrar-livro-card-header p {
+.cadastrar-editora-card-header p {
     margin: 0 0 24px;
     color: #5d6772;
 }
 
-.cadastrar-livro-feedback {
+.cadastrar-editora-feedback {
     margin-bottom: 20px;
     padding: 12px 14px;
     border-radius: 12px;
     line-height: 1.6;
 }
 
-.cadastrar-livro-feedback-error {
+.cadastrar-editora-feedback-error {
     background-color: #fff1f1;
     border: 1px solid #efc3c3;
     color: #8a2b2b;
 }
 
-.cadastrar-livro-feedback-success {
+.cadastrar-editora-feedback-success {
     background-color: #eef8f1;
     border: 1px solid #c8e3d0;
     color: #245c34;
 }
 
-.cadastrar-livro-form {
+.cadastrar-editora-form {
     display: flex;
     flex-direction: column;
     gap: 22px;
 }
 
-.cadastrar-livro-grid {
+.cadastrar-editora-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
 }
 
-.cadastrar-livro-field {
+.cadastrar-editora-field {
     display: flex;
     flex-direction: column;
     gap: 8px;
     min-width: 0;
 }
 
-.cadastrar-livro-field span {
+.cadastrar-editora-field span {
     font-weight: 600;
     color: #2d3b47;
 }
 
-.cadastrar-livro-field input,
-.cadastrar-livro-field select {
+.cadastrar-editora-field input {
     width: 100%;
     box-sizing: border-box;
     padding: 13px 14px;
@@ -135,25 +134,24 @@
     outline: none;
 }
 
-.cadastrar-livro-field input:focus,
-.cadastrar-livro-field select:focus {
+.cadastrar-editora-field input:focus {
     border-color: #466a8d;
     box-shadow: 0 0 0 3px rgba(70, 106, 141, 0.12);
 }
 
-.cadastrar-livro-field-full {
+.cadastrar-editora-field-full {
     grid-column: 1 / -1;
 }
 
-.cadastrar-livro-actions {
+.cadastrar-editora-actions {
     display: flex;
     justify-content: flex-end;
     gap: 12px;
 }
 
-.cadastrar-livro-primary,
-.cadastrar-livro-secondary,
-.cadastrar-livro-back {
+.cadastrar-editora-primary,
+.cadastrar-editora-secondary,
+.cadastrar-editora-back {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -164,43 +162,43 @@
     text-decoration: none;
 }
 
-.cadastrar-livro-primary {
+.cadastrar-editora-primary {
     border: none;
     background-color: #224b72;
     color: #ffffff;
     cursor: pointer;
 }
 
-.cadastrar-livro-secondary,
-.cadastrar-livro-back {
+.cadastrar-editora-secondary,
+.cadastrar-editora-back {
     background-color: #eef3f8;
     color: #224b72;
 }
 
 @media (max-width: 760px) {
-    .cadastrar-livro-grid {
+    .cadastrar-editora-grid {
         grid-template-columns: 1fr;
     }
 
-    .cadastrar-livro-field-full {
+    .cadastrar-editora-field-full {
         grid-column: auto;
     }
 
-    .cadastrar-livro-actions,
-    .cadastrar-livro-hero {
+    .cadastrar-editora-actions,
+    .cadastrar-editora-hero {
         flex-direction: column;
         align-items: flex-start;
     }
 }
 
 @media (max-width: 640px) {
-    .cadastrar-livro-shell {
+    .cadastrar-editora-shell {
         padding: 20px 14px 32px;
     }
 
-    .cadastrar-livro-hero,
-    .cadastrar-livro-card,
-    .cadastrar-livro-restricted {
+    .cadastrar-editora-hero,
+    .cadastrar-editora-card,
+    .cadastrar-editora-restricted {
         padding: 22px 18px;
     }
 }

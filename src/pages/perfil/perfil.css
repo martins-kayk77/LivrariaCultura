@@ -1,8 +1,4 @@
 .profile-page {
-    min-height: 100vh;
-    background:
-        radial-gradient(circle at top, rgba(30, 88, 140, 0.18), transparent 32%),
-        linear-gradient(180deg, #f6f8fb 0%, #eef3f8 100%);
     color: #102947;
 }
 
@@ -133,6 +129,11 @@
     line-height: 1.4;
 }
 
+.summary-item-permissions strong {
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
 .profile-panel {
     padding: 26px;
     border-radius: 28px;
@@ -153,7 +154,7 @@
 
 .profile-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.75fr);
     gap: 18px;
 }
 
@@ -161,6 +162,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    min-width: 0;
 }
 
 .profile-field span {
@@ -170,6 +172,7 @@
 
 .profile-field input {
     width: 100%;
+    box-sizing: border-box;
     padding: 14px 16px;
     border: 1px solid rgba(22, 67, 106, 0.18);
     border-radius: 16px;
@@ -177,6 +180,10 @@
     color: #102947;
     font-size: 1rem;
     outline: none;
+}
+
+.profile-field-user-type {
+    max-width: 330px;
 }
 
 .profile-field-full {

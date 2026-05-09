@@ -1,24 +1,24 @@
-.listar-livro-page {
+.autores-page {
     width: 100%;
 }
 
-.listar-livro-shell {
+.autores-shell {
     max-width: 1080px;
     margin: 0 auto;
     padding: 28px 20px 40px;
 }
 
-.listar-livro-hero,
-.listar-livro-toolbar,
-.listar-livro-empty,
-.listar-livro-feedback {
+.autores-hero,
+.autores-toolbar,
+.autores-empty,
+.autores-feedback {
     border-radius: 22px;
     background-color: #ffffff;
     border: 1px solid #ddd9d1;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
 }
 
-.listar-livro-hero {
+.autores-hero {
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@
     align-items: center;
 }
 
-.listar-livro-kicker {
+.autores-kicker {
     margin: 0 0 10px;
     font-size: 0.78rem;
     font-weight: 700;
@@ -35,20 +35,20 @@
     color: #7b5f3b;
 }
 
-.listar-livro-hero h1 {
+.autores-hero h1 {
     margin: 0 0 12px;
     font-size: clamp(2rem, 4vw, 3rem);
     color: #1d2a36;
 }
 
-.listar-livro-copy {
+.autores-copy {
     max-width: 620px;
     margin: 0;
     color: #556270;
     line-height: 1.7;
 }
 
-.listar-livro-create {
+.autores-create {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -60,7 +60,7 @@
     font-weight: 700;
 }
 
-.listar-livro-toolbar {
+.autores-toolbar {
     margin-top: 24px;
     padding: 18px 22px;
     display: flex;
@@ -69,7 +69,7 @@
     align-items: center;
 }
 
-.listar-livro-search {
+.autores-search {
     flex: 1;
     min-width: 0;
     display: flex;
@@ -81,11 +81,11 @@
     border: 1px solid #d8e1ea;
 }
 
-.listar-livro-search svg {
+.autores-search svg {
     color: #5f7284;
 }
 
-.listar-livro-search input {
+.autores-search input {
     width: 100%;
     border: none;
     background: transparent;
@@ -94,29 +94,29 @@
     outline: none;
 }
 
-.listar-livro-summary {
+.autores-summary {
     min-width: 110px;
     text-align: right;
 }
 
-.listar-livro-summary strong {
+.autores-summary strong {
     display: block;
     color: #1d2a36;
     font-size: 1.25rem;
 }
 
-.listar-livro-summary span {
+.autores-summary span {
     color: #5d6772;
 }
 
-.listar-livro-grid {
+.autores-grid {
     margin-top: 24px;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
 }
 
-.listar-livro-card {
+.autores-card {
     padding: 24px;
     border-radius: 22px;
     background-color: #ffffff;
@@ -124,7 +124,7 @@
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
 }
 
-.listar-livro-card-top {
+.autores-card-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -132,7 +132,7 @@
     margin-bottom: 18px;
 }
 
-.listar-livro-icon {
+.autores-icon {
     width: 48px;
     height: 48px;
     display: inline-flex;
@@ -143,66 +143,66 @@
     color: #224b72;
 }
 
-.listar-livro-id {
+.autores-id {
     color: #6b7785;
     font-size: 0.92rem;
 }
 
-.listar-livro-card h2 {
+.autores-card h2 {
     margin: 0 0 18px;
     font-size: 1.35rem;
     color: #1d2a36;
 }
 
-.listar-livro-meta {
+.autores-meta {
     display: grid;
     gap: 12px;
 }
 
-.listar-livro-meta div {
+.autores-meta div {
     display: flex;
     align-items: center;
     gap: 10px;
     color: #556270;
 }
 
-.listar-livro-empty,
-.listar-livro-feedback {
+.autores-empty,
+.autores-feedback {
     margin-top: 24px;
     padding: 24px;
     color: #556270;
     text-align: center;
 }
 
-.listar-livro-feedback {
+.autores-feedback {
     color: #8a2b2b;
     background-color: #fff1f1;
     border-color: #efc3c3;
 }
 
 @media (max-width: 860px) {
-    .listar-livro-grid {
+    .autores-grid {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 640px) {
-    .listar-livro-shell {
+    .autores-shell {
         padding: 20px 14px 32px;
     }
 
-    .listar-livro-hero,
-    .listar-livro-toolbar {
+    .autores-hero,
+    .autores-toolbar {
         padding: 22px 18px;
     }
 
-    .listar-livro-hero,
-    .listar-livro-toolbar {
+    .autores-hero,
+    .autores-toolbar {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .listar-livro-summary {
+    .autores-summary {
         text-align: left;
     }
 }

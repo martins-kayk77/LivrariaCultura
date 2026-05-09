@@ -9,6 +9,7 @@ function Index() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showReset, setShowReset] = useState(false);
   const [feedback, setFeedback] = useState({
     type: "",
     message: "",
@@ -36,6 +37,33 @@ function Index() {
       setFeedback({
         type: "error",
         message: err?.response?.data?.response || "Nao foi possivel fazer login.",
+      });
+    }
+  }
+
+  async function handleResetPassword() {
+    setFeedback({ type: "", message: "" });
+
+    if (!email || !email.includes("@")) {
+      setFeedback({
+        type: "error",
+        message: "Informe um email valido para recuperar a senha.",
+      });
+      return;
+    }
+
+    try {
+      const { data } = await api.put("/login/reset", { email });
+
+      setFeedback({
+        type: "success",
+        message: data?.response || "Link de redefinicao enviado para o email cadastrado.",
+      });
+      setShowReset(false);
+    } catch (err) {
+      setFeedback({
+        type: "error",
+        message: err?.response?.data?.response || "Nao foi possivel recuperar a senha.",
       });
     }
   }
@@ -93,6 +121,29 @@ function Index() {
                 className="login-input"
               />
             </label>
+
+            <button
+              type="button"
+              className="login-forgot-button"
+              onClick={() => setShowReset((current) => !current)}
+            >
+              Esqueceu a senha?
+            </button>
+
+            {showReset && (
+              <div className="login-reset-box">
+                <p>
+                  Informe seu email cadastrado para receber um link de redefinicao.
+                </p>
+                <button
+                  type="button"
+                  className="login-reset-action"
+                  onClick={handleResetPassword}
+                >
+                  Enviar link
+                </button>
+              </div>
+            )}
 
             <button type="submit" className="login-button">
               Acessar

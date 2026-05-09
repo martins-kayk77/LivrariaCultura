@@ -1,24 +1,24 @@
-.listar-livro-page {
+.editoras-page {
     width: 100%;
 }
 
-.listar-livro-shell {
+.editoras-shell {
     max-width: 1080px;
     margin: 0 auto;
     padding: 28px 20px 40px;
 }
 
-.listar-livro-hero,
-.listar-livro-toolbar,
-.listar-livro-empty,
-.listar-livro-feedback {
+.editoras-hero,
+.editoras-toolbar,
+.editoras-empty,
+.editoras-feedback {
     border-radius: 22px;
     background-color: #ffffff;
     border: 1px solid #ddd9d1;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
 }
 
-.listar-livro-hero {
+.editoras-hero {
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@
     align-items: center;
 }
 
-.listar-livro-kicker {
+.editoras-kicker {
     margin: 0 0 10px;
     font-size: 0.78rem;
     font-weight: 700;
@@ -35,20 +35,20 @@
     color: #7b5f3b;
 }
 
-.listar-livro-hero h1 {
+.editoras-hero h1 {
     margin: 0 0 12px;
     font-size: clamp(2rem, 4vw, 3rem);
     color: #1d2a36;
 }
 
-.listar-livro-copy {
+.editoras-copy {
     max-width: 620px;
     margin: 0;
     color: #556270;
     line-height: 1.7;
 }
 
-.listar-livro-create {
+.editoras-create {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -60,7 +60,7 @@
     font-weight: 700;
 }
 
-.listar-livro-toolbar {
+.editoras-toolbar {
     margin-top: 24px;
     padding: 18px 22px;
     display: flex;
@@ -69,7 +69,7 @@
     align-items: center;
 }
 
-.listar-livro-search {
+.editoras-search {
     flex: 1;
     min-width: 0;
     display: flex;
@@ -81,11 +81,11 @@
     border: 1px solid #d8e1ea;
 }
 
-.listar-livro-search svg {
+.editoras-search svg {
     color: #5f7284;
 }
 
-.listar-livro-search input {
+.editoras-search input {
     width: 100%;
     border: none;
     background: transparent;
@@ -94,29 +94,29 @@
     outline: none;
 }
 
-.listar-livro-summary {
+.editoras-summary {
     min-width: 110px;
     text-align: right;
 }
 
-.listar-livro-summary strong {
+.editoras-summary strong {
     display: block;
     color: #1d2a36;
     font-size: 1.25rem;
 }
 
-.listar-livro-summary span {
+.editoras-summary span {
     color: #5d6772;
 }
 
-.listar-livro-grid {
+.editoras-grid {
     margin-top: 24px;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
 }
 
-.listar-livro-card {
+.editoras-card {
     padding: 24px;
     border-radius: 22px;
     background-color: #ffffff;
@@ -124,7 +124,7 @@
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
 }
 
-.listar-livro-card-top {
+.editoras-card-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -132,7 +132,7 @@
     margin-bottom: 18px;
 }
 
-.listar-livro-icon {
+.editoras-icon {
     width: 48px;
     height: 48px;
     display: inline-flex;
@@ -143,66 +143,66 @@
     color: #224b72;
 }
 
-.listar-livro-id {
+.editoras-id {
     color: #6b7785;
     font-size: 0.92rem;
 }
 
-.listar-livro-card h2 {
+.editoras-card h2 {
     margin: 0 0 18px;
     font-size: 1.35rem;
     color: #1d2a36;
 }
 
-.listar-livro-meta {
+.editoras-meta {
     display: grid;
     gap: 12px;
 }
 
-.listar-livro-meta div {
+.editoras-meta div {
     display: flex;
     align-items: center;
     gap: 10px;
     color: #556270;
 }
 
-.listar-livro-empty,
-.listar-livro-feedback {
+.editoras-empty,
+.editoras-feedback {
     margin-top: 24px;
     padding: 24px;
     color: #556270;
     text-align: center;
 }
 
-.listar-livro-feedback {
+.editoras-feedback {
     color: #8a2b2b;
     background-color: #fff1f1;
     border-color: #efc3c3;
 }
 
 @media (max-width: 860px) {
-    .listar-livro-grid {
+    .editoras-grid {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 640px) {
-    .listar-livro-shell {
+    .editoras-shell {
         padding: 20px 14px 32px;
     }
 
-    .listar-livro-hero,
-    .listar-livro-toolbar {
+    .editoras-hero,
+    .editoras-toolbar {
         padding: 22px 18px;
     }
 
-    .listar-livro-hero,
-    .listar-livro-toolbar {
+    .editoras-hero,
+    .editoras-toolbar {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .listar-livro-summary {
+    .editoras-summary {
         text-align: left;
     }
 }

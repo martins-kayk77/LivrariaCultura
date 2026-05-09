@@ -1,0 +1,80 @@
+.app-shell-page {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #f5f3ee 0%, #ece8df 100%);
+    color: #1f2933;
+}
+
+.app-shell-topbar-wrap {
+    padding: 18px 20px 0;
+}
+
+.app-shell-topbar {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #224b72;
+    border-radius: 18px;
+    box-shadow: 0 14px 28px rgba(34, 75, 114, 0.18);
+}
+
+.app-shell-topbar-button,
+.app-shell-profile-link {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.app-shell-topbar-button svg,
+.app-shell-profile-link svg {
+    font-size: 32px;
+}
+
+.app-shell-topbar-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-shell-user-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #ffffff;
+}
+
+.app-shell-user-copy strong {
+    font-size: 0.98rem;
+    font-weight: 700;
+}
+
+.app-shell-user-role {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.82;
+}
+
+@media (max-width: 860px) {
+    .app-shell-user-copy {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .app-shell-topbar-wrap {
+        padding: 14px 14px 0;
+    }
+
+    .app-shell-topbar {
+        padding: 12px 14px;
+    }
+}
